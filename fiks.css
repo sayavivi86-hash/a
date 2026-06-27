@@ -32,8 +32,6 @@ section {
     min-height: 100vh;
     padding: 100px 40px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start; 
 }
 
 section:not(#bukutamu) {
@@ -46,8 +44,8 @@ section:not(#bukutamu) {
 
 section h2 {
     color: #670A0A;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
     text-align: center;
 }
 
