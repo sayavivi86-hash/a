@@ -484,7 +484,6 @@ footer a:hover {
 
 @media (max-width: 480px) {
     nav ul {
-        flex-direction: column;
         gap: 10px;
     }
 
