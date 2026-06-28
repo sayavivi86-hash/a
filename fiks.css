@@ -56,22 +56,41 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    flex-wrap: nowrap;
+    padding: 15px 30px;
     background: #670A0A;
     border-bottom: 2px solid #fffdd0;
-    backdrop-filter: blur(10px);
+    width: 100%;
 }
 
 header h1 {
     font-size: 1.5rem;
-    color: #670A0A3;
+    color: #fffdd0;
+    white-space: nowrap;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    overflow-x: auto;
+}
+
+nav::-webkit-scrollbar {
+    display: none;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: nowrap;
     gap: 20px;
     align-items: center;
+    white-space: nowrap;
+}
+
+nav ul li {
+    flex-shrink: 0;
 }
 
 nav ul li a {
@@ -79,6 +98,7 @@ nav ul li a {
     color: #fffdd0;
     font-weight: 500;
     transition: 0.3s;
+    padding: 5px 0;
 }
 
 nav ul li a:hover {
